@@ -1,0 +1,69 @@
+"reveiw" : 
+                [
+                    {
+                        "user-id" : "abc24a",
+                        "comment" : "This product is exellent. You can buy it easily ! No dout it's a good product",
+                        "a-image-s": 1,
+                        "a-images" :
+                            [
+                                {
+                                    "a-image" : "https://img.drz.lazcdn.com/static/bd/p/467c22e3bd90a13228ca7eb0c1aa9b68.jpg_400x400q80.jpg_.webp"
+                                },
+                                {
+                                    "a-image" : "https://img.drz.lazcdn.com/static/bd/p/467c22e3bd90a13228ca7eb0c1aa9b68.jpg_400x400q80.jpg_.webp"
+                                },
+                                {
+                                    "a-image" : "https://img.drz.lazcdn.com/static/bd/p/a80cfd6875eb5760e1f5f3c9fe012f1c.jpg_400x400q80.jpg_.webp"
+                                },
+                                {
+                                    "a-image" : "https://img.drz.lazcdn.com/static/bd/p/467c22e3bd90a13228ca7eb0c1aa9b68.jpg_400x400q80.jpg_.webp"
+                                }
+                            ]
+                    },
+                    {
+                        "user-id" : "abc24a",
+                        "comment" : "This product is exellent. You can buy it easily ! No dout it's a good product",
+                        "a-image-s": 1,
+                        "a-images" :
+                            [
+                                {
+                                    "a-image" : "https://img.drz.lazcdn.com/static/bd/p/467c22e3bd90a13228ca7eb0c1aa9b68.jpg_400x400q80.jpg_.webp"
+                                },
+                                {
+                                    "a-image" : "https://img.drz.lazcdn.com/static/bd/p/467c22e3bd90a13228ca7eb0c1aa9b68.jpg_400x400q80.jpg_.webp"
+                                },
+                                {
+                                    "a-image" : "https://img.drz.lazcdn.com/static/bd/p/a80cfd6875eb5760e1f5f3c9fe012f1c.jpg_400x400q80.jpg_.webp"
+                                },
+                                {
+                                    "a-image" : "https://img.drz.lazcdn.com/static/bd/p/467c22e3bd90a13228ca7eb0c1aa9b68.jpg_400x400q80.jpg_.webp"
+                                }
+                            ]
+                    },
+                    {
+                        "user-id" : "abc24a",
+                        "comment" : "This product is exellent. You can buy it easily ! No dout it's a good product",
+                        "a-image-s": 1,
+                        "a-images" :
+                            [
+                                {
+                                    "a-image" : "https://img.drz.lazcdn.com/static/bd/p/467c22e3bd90a13228ca7eb0c1aa9b68.jpg_400x400q80.jpg_.webp"
+                                },
+                                {
+                                    "a-image" : "https://img.drz.lazcdn.com/static/bd/p/467c22e3bd90a13228ca7eb0c1aa9b68.jpg_400x400q80.jpg_.webp"
+                                },
+                                {
+                                    "a-image" : "https://img.drz.lazcdn.com/static/bd/p/a80cfd6875eb5760e1f5f3c9fe012f1c.jpg_400x400q80.jpg_.webp"
+                                },
+                                {
+                                    "a-image" : "https://img.drz.lazcdn.com/static/bd/p/467c22e3bd90a13228ca7eb0c1aa9b68.jpg_400x400q80.jpg_.webp"
+                                }
+                            ]
+                    },
+                    {
+                        "user-id" : "abc24a",
+                        "comment" : "This product is exellent. You can buy it easily ! No dout it's a good product",
+                        "a-image-s": 0,
+                        "a-images" :[]
+                    }
+                ]

@@ -1,0 +1,26 @@
+[
+    {
+        "oder-id":"oder-xtry4532646543452v2d5ed5",
+        "user-id":"user-sliyulrs35r7ge2dfr4rg45",
+        "seller-id":"seller-aeuyfo58e7rtwjvbrjhjhsger",
+        "oder":{
+            "product-id":"product-1234567890abcdefg",
+            "quantity":2,
+            "total-price":49.99,
+            "status":"pending",
+            "created-at":"2023-10-01T12:00:00Z",
+            "updated-at":"2023-10-01T12:00:00Z",
+            "shipping-address":{
+                "land-mark":"Mahimaganj Railway Station",
+                "adders":"Mahimaganj, Gobindaganj, Gaibandha",
+                "sub-distric":"Gobindaganj",
+                "distric":"Gaibandha",
+                "state":"Rangpur"
+            },
+            "payment-status":false,
+            "payment-mathood":"",
+            "payment-id":"",
+            "delivery-status":""
+        }
+    }
+]

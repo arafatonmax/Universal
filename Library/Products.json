@@ -1,0 +1,61 @@
+[
+    {   
+        "name": "Comfortable cotton t-shirt available in various sizes.",
+        "price": 20.00,
+        "discount" : 24,
+        "rating": 4.5,
+        "image": "https://img.drz.lazcdn.com/static/bd/p/7d98774e10afd2a5a20ae95f73f55ee1.jpg_400x400q80.jpg_.webp",
+        "category": "Clothing",
+        "details": {
+            "discription": "This is a cool dress. Everyone should love it and buy it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur assumenda dignissimos nihil voluptas dolorem nam possimus laboriosam omnis impedit dolores quia consequuntur autem quam fugit maiores sit quod neque ab eius saepe, praesentium blanditiis nemo dolorum temporibus. Asperiores ex eos voluptates! Voluptatibus, architecto optio sed ex error amet iusto ipsa illo sapiente at enim repudiandae provident tempore minima officiis aspernatur neque. Quam excepturi sed dolor, molestias exercitationem optio repellat suscipit quibusdam repellendus voluptates voluptatem recusandae molestiae commodi consequuntur minus? Illum numquam est, esse deleniti ex inventore sit quam. Consectetur modi eligendi nemo laudantium obcaecati ipsam molestiae culpa dolore ipsa magni.",
+            "d-images":
+                [
+                    {
+                        "d-image": "https://img.drz.lazcdn.com/g/kf/S70fc5dbf2b4843808dbebb3753444e16l.jpg_400x400q80.jpg_.webp"
+                    },
+                    {
+                        "d-image": "https://img.drz.lazcdn.com/static/bd/p/99098512af3175d045e163f38a10cb1a.jpg_400x400q80.jpg_.webp"
+                    },
+                    {
+                        "d-image": "https://img.drz.lazcdn.com/static/bd/p/ccfe89858f7dc1e17033203339b00fc8.jpg_400x400q80.jpg_.webp"
+                    },
+                    {
+                        "d-image": "https://img.drz.lazcdn.com/static/bd/p/a3685137c302a5e0bc1f5eb8277fbf3b.png_400x400q80.png_.webp"
+                    },
+                    {
+                        "d-image": "https://img.drz.lazcdn.com/static/bd/p/9ffb7370040cbcb16c34d6786468f168.jpg_400x400q80.jpg_.webp"
+                    }
+                ],
+            "size-status": true,
+            "size": ["S", "M", "L", "XL", "XXL"],
+            "color-status": true,
+            "color": {
+                "Red":"https://img.drz.lazcdn.com/static/bd/p/b5584c08b372c4bcb6a15af4ab898c7d.png_400x400q80.png_.webp",
+                "Blue":"https://img.drz.lazcdn.com/static/bd/p/7fd3104c8c4988017024dce1b64092b5.jpg_400x400q80.jpg_.webp", 
+                "Black":"https://img.drz.lazcdn.com/static/bd/p/8336780473489e001362552c9ca7e246.jpg_400x400q80.jpg_.webp", 
+                "White":"https://img.drz.lazcdn.com/static/bd/p/4fef93322ebd396b69262a6fc4faa56b.jpg_400x400q80.jpg_.webp",
+                "Green":"https://img.drz.lazcdn.com/g/kf/S93ff17535f0b492ca3dc5232f6178678H.jpg_400x400q80.jpg_.webp"
+            },
+            "stock": 100,
+            "brand": "BrandX",
+            "brand-status": true,
+            "d-time": 3,
+            "cash-on-delivery" : true,
+            "returnable": {
+                "status": true,
+                "time": 7,
+                "type": "days",
+                "condition":{
+                    "status": true,
+                    "type": "unused",
+                    "details": "Product must be unused and in original packaging."
+                }
+            },
+            "warranty": {
+                "status": false,
+                "time": 6, 
+                "type": "months"
+            }
+        }
+    }
+]

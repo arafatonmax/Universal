@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #f5f5f5;
+}
+
+/* This is heder section  */
+
+header {
+    /* background-color: #f85606; Daraz orange */
+    background-color: chocolate;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+header nav {
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.scearch-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 100%;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+.scearch-container h1 {
+    font-size: 24px;
+    display: inline-block;
+}
+.scearch-container-scearch-bar {
+    width: 700px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+}
+.scearch-container-scearch-bar input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.scearch-container-scearch-bar button {
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent;
+}
+.scearch-container a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.to-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend server for the application that was wanted to me from my friend",
+  "main": "hart.js",
+  "author": "Muhammad Yeasin Arafat",
+  "license": "ISC",
+  "scripts": {
+    "dev": "nodemon hart.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node hart.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "init": "^0.1.2",
+    "mongodb": "^6.18.0",
+    "nodemon": "^3.1.10"
+  }
+}

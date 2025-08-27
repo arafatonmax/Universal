@@ -1,0 +1,72 @@
+[
+    {
+        "seller-id":"seller-aeuyfo58e7rtwjvbrjhjhsger",
+        "name":"John's Electronics",
+        "email":"abc@email.com",
+        "phone":"+8801234567890",
+        "address":{
+            "land-mark":"Main Street",
+            "adders":"123 Main St, Dhaka",
+            "sub-distric":"City Center",
+            "distric":"Dhaka",
+            "state":"Dhaka"
+        },
+        "created-at":"2023-10-01T12:00:00Z",
+        "updated-at":"2023-10-01T12:00:00Z",
+        "products":[
+            {
+                "product-id":"product-1234567890abcdefg"
+            },
+            {
+                "product-id":"product-0987654321fedcba"
+            },
+            {
+                "product-id":"product-112233445566778899"
+            }
+        ],
+        "rating":4.5,
+        "profile-picture":"https://example.com/profile.jpg",
+        "description":"A trusted seller of electronics with a wide range of products.",
+        "status":"active",
+        "cover-image":"https://example.com/cover.jpg",
+        "social-links":{
+            "facebook":"https://facebook.com/seller-profile",
+            "twitter":"https://twitter.com/seller-profile",
+            "instagram":"https://instagram.com/seller-profile"
+        },
+        "contact-info":{
+            "email":"abc@email.com",
+            "phone":"+8801234567890",
+            "massenger":"https://m.me/seller-profile",
+            "whatsapp":"https://wa.me/8801234567890"
+        },
+        "oder-counts":{
+            "total-oder":5,
+            "total-selled":2,
+            "total-cancelled":1,
+            "total-returned":0,
+            "total-pending":2,
+            "total-oder-id":[
+                "oder-xtry4532646543452v2d5ed5",
+                "oder-abc1234567890xyz0987654",
+                "oder-def0987654321xyz1234567",
+                "oder-ghijk1234567890lmnopqrs",
+                "oder-tuvwx1234567890yzabcdef"
+            ],
+            "total-selled-id":[
+                "oder-xtry4532646543452v2d5ed5",
+                "oder-abc1234567890xyz0987654"
+            ],
+            "total-cancelled-id":[
+                "oder-def0987654321xyz1234567"
+            ],
+            "total-returned-id":[
+
+            ],
+            "total-pending-id":[
+                "oder-xtry4532646543452v2d5ed5",
+                "oder-ghijk1234567890lmnopqrs"
+            ]
+        }
+    }
+]

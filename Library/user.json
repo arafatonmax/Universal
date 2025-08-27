@@ -1,0 +1,64 @@
+[
+    {
+        "useer-id": "user-sliyulrs35r7ge2dfr4rg45",
+        "name": "John Doe",
+        "email": "",
+        "phone": "+8801234567890",
+        "address-book":[
+            {
+                "adders-id": "addr-1234567890abcdefg",
+                "name": "Home",
+                "land-mark": "Mahimaganj Railway Station",
+                "adders": "Mahimaganj, Gobindaganj, Gaibandha",
+                "sub-distric": "Gobindaganj",
+                "distric": "Gaibandha",
+                "state": "Rangpur"
+            },
+            {
+                "adders-id": "addr-0987654321fedcba",
+                "name": "Office",
+                "land-mark": "City Center",
+                "adders": "123 Main St, Dhaka",
+                "sub-distric": "City Center",
+                "distric": "Dhaka",
+                "state": "Dhaka"
+            }
+        ],
+        "created-at": "2023-10-01T12:00:00Z",
+        "updated-at": "2023-10-01T12:00:00Z",
+        "profile-picture": "https://example.com/profile.jpg",
+        "oder-history":{
+            "total-oder-id": [
+                "oder-xtry4532646543452v2d5ed5",
+                "oder-abc1234567890xyz0987654",
+                "oder-def0987654321xyz1234567",
+                "oder-ghijk1234567890lmnopqrs",
+                "oder-tuvwx1234567890yzabcdef"
+            ],
+            "total-buyed-id": [
+                "oder-xtry4532646543452v2d5ed5",
+                "oder-abc1234567890xyz0987654"
+            ],
+            "total-cancelled-id": [
+                "oder-def0987654321xyz1234567"
+            ]
+        },
+        "wishlist": [
+            {
+                "product-id": "product-1234567890abcdefg",
+                "added-at": "2023-10-01T12:00:00Z"
+            },
+            {
+                "product-id": "product-0987654321fedcba",
+                "added-at": "2023-10-02T12:00:00Z"
+            }
+        ],
+        "cart": [
+            {
+                "product-id": "product-112233445566778899",
+                "quantity": 1,
+                "added-at": "2023-10-03T12:00:00Z"
+            }
+        ]
+    }
+]
