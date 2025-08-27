@@ -1,11 +1,11 @@
-import { getDiscountedPrice } from './Cells/price.js';
-import { shortenText } from './Cells/titel.js';
-import { renderStars } from './Cells/rating.js';
+import { getDiscountedPrice } from './Cells/commonFun.js';
+import { shortenText } from './Cells/commonFun.js';
+import { renderStars } from './Cells/commonFun.js';
 
 function loadProducts() {
     const container = document.querySelector('.product-container');
     const loadBtn = document.getElementById('load-more-btn'); // Updated selector
-    const url = 'http://localhost:3000/api/products'; // Adjust path if needed
+    const url = 'http://localhost:3000/products';
 
     let products = [];
     let currentIndex = 0;
@@ -32,10 +32,12 @@ function loadProducts() {
             const card = document.createElement('div');
             card.className = 'product-item';
             card.innerHTML = `
-                <img src="${product.image}" alt="${product.name}">
-                <h3>${shortenedName}</h3>
-                <p>৳${discountedPrice} <span> -${product.discount}%</span></p>
-                <div id="${ratingId}"></div>
+                <a href="each-product.html?id=${product._id}">
+                    <img src="${product.image}" alt="${product.name}">
+                    <h3>${shortenedName}</h3>
+                    <p>৳${discountedPrice} <span> -${product.discount}%</span></p>
+                    <div id="${ratingId}"></div>
+                </a>
             `;
             container.appendChild(card);
 

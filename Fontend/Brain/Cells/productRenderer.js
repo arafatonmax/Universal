@@ -1,13 +1,15 @@
 // Fontend/Brain/Cells/productRenderer.js
 
-import { getDiscountedPrice } from './price.js';
+import { getDiscountedPrice } from './commonFun.js';
 
 export function renderProductDetails(product, containerId, { onAddToCart, onToggleWishlist, isWishlisted }) {
   const container = document.getElementById(containerId);
   const images = product.details['d-images'].map(img => img['d-image']);
   const currentPrice = getDiscountedPrice(product.price, product.discount);
+  console.log(container, images, currentPrice);
 
-  container.innerHTML = `
+  const HtmlCode = 
+  `
     <div class="product-gallery">
       <div class="main-img">
         <button class="image-nav-btn left-btn">←</button>
@@ -66,46 +68,58 @@ export function renderProductDetails(product, containerId, { onAddToCart, onTogg
     </div>
   `;
 
+  container.innerHTML = HtmlCode;
+
   // Image navigation
   let currentIndex = 0;
   const mainImg = container.querySelector('#main-image');
   const leftBtn = container.querySelector('.left-btn');
   const rightBtn = container.querySelector('.right-btn');
 
-  leftBtn.onclick = () => {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
+  if (!mainImg) {
+    console.error('Main image element not found in container:', containerId);
+    return;
+  }
+  
+  // ensure initial src
+  mainImg.src = images[0] ?? '';
+
+  const showImage = (index) => {
+    currentIndex = (index + images.length) % images.length;
     mainImg.src = images[currentIndex];
   };
-  rightBtn.onclick = () => {
-    currentIndex = (currentIndex + 1) % images.length;
-    mainImg.src = images[currentIndex];
-  };
+
+  if (leftBtn) leftBtn.addEventListener('click', () => showImage(currentIndex - 1));
+  if (rightBtn) rightBtn.addEventListener('click', () => showImage(currentIndex + 1));
 
   // Thumbnail click
   container.querySelectorAll('.thumbnails img').forEach((thumb, i) => {
-    thumb.onclick = () => {
-      currentIndex = i;
-      mainImg.src = images[i];
-    };
+    thumb.addEventListener('click', () => showImage(i));
   });
 
   // Wishlist toggle
-  container.querySelector('.wishlist-icon').onclick = () => {
-    onToggleWishlist();
-    renderProductDetails(product, containerId, {
-      onAddToCart,
-      onToggleWishlist,
-      isWishlisted: !isWishlisted
+  const wishlistIcon = container.querySelector('.wishlist-icon');
+  if (wishlistIcon) {
+    wishlistIcon.addEventListener('click', () => {
+      onToggleWishlist();
+      renderProductDetails(product, containerId, {
+        onAddToCart,
+        onToggleWishlist,
+        isWishlisted: !isWishlisted
+      });
     });
-  };
+  }
 
   // Cart button
-  container.querySelector('.cart').onclick = onAddToCart;
+  const cartBtn = container.querySelector('.cart');
+  if (cartBtn) cartBtn.addEventListener('click', onAddToCart);
 
   // Buy Now button
-  container.querySelector('.buy').onclick = () => {
-    window.location.href = `/checkout.html?id=${product['product-id']}`;
-  };
+  const buyBtn = container.querySelector('.buy');
+  if (buyBtn) buyBtn.addEventListener('click', () => {
+    window.location.href = `/checkout.html?id=${product['_id']}`;
+  });
+
 }
 
 function getDeliveryRange(days) {

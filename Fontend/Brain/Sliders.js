@@ -1,6 +1,6 @@
 function initSlider() {
     const slider = document.getElementById('slider');
-    const url = 'http://localhost:3000/api/sliders';
+    const url = 'http://localhost:3000/sliders';
 
     fetch(url)
         .then(res => res.json())

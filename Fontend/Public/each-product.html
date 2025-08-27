@@ -9,50 +9,9 @@
 <body>
   <header></header>
   <div class="to-center">
-    <section class="product">
-      <!-- Left Side: Product Images -->
-      <div class="product-gallery">
-        <img id="main-image" src="" alt="Main Product Image" />
-        <div class="image-nav">
-          <button class="image-nav-btn" id="prev-btn">←</button>
-          <button class="image-nav-btn" id="next-btn">→</button>
-        </div>
-        <div class="thumbnails"></div>
-      </div>
-
-      <!-- Right Side: Product Details -->
-      <div class="product-details">
-        <h2 id="product-name">Loading...</h2>
-        <p class="brand">Brand: <span id="brand-name">Loading...</span></p>
-        <p class="price">
-          <span class="current">৳0</span>
-          <span class="old">৳0</span>
-          <span class="discount">-0%</span>
-        </p>
-
-        <p class="color">Color:</p>
-        <div class="color-thumbnails"></div>
-
-        <p class="size">Size:</p>
-        <div class="size-options"></div>
-
-        <div class="quantity">
-          <button class="qty-btn" onclick="decreaseQty()">-</button>
-          <input type="text" id="quantity" value="1" />
-          <button class="qty-btn" onclick="increaseQty()">+</button>
-        </div>
-
-        <div class="buttons">
-          <button class="buy">Buy Now</button>
-          <button class="cart">Add to Cart</button>
-        </div>
-
-        <div class="delivery"></div>
-      </div>
-    </section>
+    <section class="product" id="product"></section>
   </div>
 
-  <script src="../Brain/Cells/price.js"></script>
   <script src="../Brain/each-product.js" type="module"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const dotenv = require('dotenv').config();
 
 const app = express();
@@ -29,23 +29,20 @@ async function run() {
     const slidersCollection = db.collection("Sliders");
     const productsCollection = db.collection("Products");
 
-    app.get("/api/sliders", async (req, res) => {
+    app.get("/sliders", async (req, res) => {
       const sliders = await slidersCollection.find({}).toArray();
       res.send(sliders);
     });
-    app.get("/api/products", async (req, res) => {
+    app.get("/products", async (req, res) => {
       const products = await productsCollection.find({}).toArray();
       res.send(products);
     });
-    app.get("/api/products/:id", async (req, res) => {
-      const productId = req.params.id;
-      const product = await productsCollection.findOne({ "product-id": productId });
 
-      if (!product) {
-        return res.status(404).send({ error: "Product not found" });
-      }
-
-      res.send(product);
+    // Get product by ID
+    app.get("/item/:id", async (req, res) => {
+      const {id} = req.params;
+      const result = await productsCollection.findOne({ _id: new ObjectId(`${id}`) });
+      res.send(result);
     });
 
     app.listen(process.env.PORT, () => {

@@ -26,6 +26,11 @@
     transform: translateY(-4px);
 }
 
+.product-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .product-item img {
     width: 100%;
     height: 160px;
