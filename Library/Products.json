@@ -56,6 +56,95 @@
                 "time": 6, 
                 "type": "months"
             }
-        }
+        },
+        "review":{
+                    "rating-summary": {
+                        "average": 4.8,
+                        "total-ratings": 92,
+                        "total-reviews": 12,
+                        "distribution": {
+                        "5": 82,
+                        "4": 6,
+                        "3": 3,
+                        "2": 0,
+                        "1": 1
+                        }
+                    },
+                    "reviews": [
+                        {
+                        "review-id": "rev-001",
+                        "user-name": "Dilshad V.",
+                        "verified": true,
+                        "rating": 5,
+                        "date": "2021-07-29",
+                        "text": "এই টিভি অসাধারণ! সার্ভিসও ভালো ছিল।",
+                        "images": [
+                            "https://img.drz.lazcdn.com/g/kf/S70fc5dbf2b4843808dbebb3753444e16l.jpg_400x400q80.jpg_.webp",
+                            "https://img.drz.lazcdn.com/static/bd/p/99098512af3175d045e163f38a10cb1a.jpg_400x400q80.jpg_.webp"
+                        ],
+                        "color-family": "Black",
+                        "likes": 10,
+                        "seller-response": {
+                            "text": "ধন্যবাদ ❤️ (ধ্রুব এন্টারপ্রাইজ রানেল)",
+                            "date": "2022-07-29"
+                        }
+                        },
+                        {
+                        "review-id": "rev-002",
+                        "user-name": "Mahfuz R.",
+                        "verified": true,
+                        "rating": 5,
+                        "date": "2024-01-10",
+                        "text": "Alhamdulillah! After using few days giving a review: Received the authentic product with Brand warranty. Delivery & installation was super fast. Picture quality and sound quality best. Within this price there is no competitor or other brand to beat Haier TV with various specifications and quality. Thanks to TV HUT & Daraz for providing this special product in such a low price that anybody can afford. Recommending TV HUT as a best seller ❤️",
+                        "images": [],
+                        "color-family": "Black",
+                        "likes": 5
+                        },
+                        {
+                        "review-id": "rev-003",
+                        "user-name": "Sadia K.",
+                        "verified": true,
+                        "rating": 4,
+                        "date": "2024-02-15",
+                        "text": "Good picture quality but sound could be better.",
+                        "images": [],
+                        "color-family": "Black",
+                        "likes": 2
+                        },
+                        {
+                        "review-id": "rev-004",
+                        "user-name": "Rafiul H.",
+                        "verified": false,
+                        "rating": 5,
+                        "date": "2024-03-01",
+                        "text": "Excellent value for money. Happy with the purchase.",
+                        "images": [],
+                        "color-family": "Black",
+                        "likes": 3
+                        },
+                        {
+                        "review-id": "rev-005",
+                        "user-name": "Nusrat J.",
+                        "verified": true,
+                        "rating": 5,
+                        "date": "2024-03-20",
+                        "text": "Loved the design and clarity. Perfect for my room.",
+                        "images": [],
+                        "color-family": "Black",
+                        "likes": 4
+                        },
+                        {
+                        "review-id": "rev-006",
+                        "user-name": "Tanvir A.",
+                        "verified": true,
+                        "rating": 4,
+                        "date": "2024-04-02",
+                        "text": "Delivery was quick. TV works great.",
+                        "images": [],
+                        "color-family": "Black",
+                        "likes": 1
+                        }
+                    ]
+                }  
     }
 ]

@@ -3,6 +3,7 @@ import { addToCart } from './Cells/cartManager.js';
 import { toggleWishlist, isInWishlist } from './Cells/wishlist.js';
 import { useUrl } from './Cells/commonFun.js';
 import { makeURL } from './Cells/commonFun.js';
+import { renderReviewSection } from './Cells/reviewRenderar.js';
 
 function loadData(){
   const {id} = useUrl();
@@ -10,7 +11,9 @@ function loadData(){
   fetch(uRl)
   .then(res => res.json())
   .then(res => {
-      renderProductDetails(res, 'product', { onAddToCart: () => addToCart(res), onToggleWishlist: () => toggleWishlist(res), isWishlisted: isInWishlist(id)});
+    renderProductDetails(res, 'product', { onAddToCart: () => addToCart(res), onToggleWishlist: () => toggleWishlist(res), isWishlisted: isInWishlist(id)});
+    renderReviewSection(res.review, 'reviews');
+
   })
 }
 loadData();

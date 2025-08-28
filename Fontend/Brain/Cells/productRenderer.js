@@ -2,11 +2,10 @@
 
 import { getDiscountedPrice } from './commonFun.js';
 
-export function renderProductDetails(product, containerId, { onAddToCart, onToggleWishlist, isWishlisted }) {
+export function renderProductDetails(product, containerId, { onAddToCart, onToggleWishlist, isWishlisted } = {}) {
   const container = document.getElementById(containerId);
   const images = product.details['d-images'].map(img => img['d-image']);
   const currentPrice = getDiscountedPrice(product.price, product.discount);
-  console.log(container, images, currentPrice);
 
   const HtmlCode = 
   `
