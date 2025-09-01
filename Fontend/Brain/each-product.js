@@ -12,7 +12,7 @@ function loadData(){
   .then(res => res.json())
   .then(res => {
     renderProductDetails(res, 'product', { onAddToCart: () => addToCart(res), onToggleWishlist: () => toggleWishlist(res), isWishlisted: isInWishlist(id)});
-    renderReviewSection(res.review, 'reviews');
+    renderReviewSection(res.review, 'review');
 
   })
 }
